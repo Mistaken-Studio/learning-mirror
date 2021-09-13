@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mistaken.RoundLogger</name>
+    </assembly>
+    <members>
+        <member name="T:Mistaken.RoundLogger.Config">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.Config.IsEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.Config.VerbouseOutput">
+            <summary>
+            Gets or sets a value indicating whether debug should be displayed.
+            </summary>
+        </member>
+        <member name="P:Mistaken.RoundLogger.Config.AutoUpdateConfig">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mistaken.RoundLogger.PluginHandler">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.PluginHandler.Author">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.PluginHandler.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.PluginHandler.Prefix">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.PluginHandler.Priority">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.RoundLogger.PluginHandler.RequiredExiledVersion">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.RoundLogger.PluginHandler.OnEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.RoundLogger.PluginHandler.OnDisabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mistaken.RoundLogger.RLogger">
+            <summary>
+            Round Logger.
+            </summary>
+        </member>
+        <member name="E:Mistaken.RoundLogger.RLogger.OnEnd">
+            <summary>
+            Action event invoked on round saving
+            </summary>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RLogger.Log(System.String,System.String,System.String)">
+            <summary>
+            Used to log message.
+            </summary>
+            <param name="module">Module.</param>
+            <param name="type">Type.</param>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RLogger.PlayerToString(Exiled.API.Features.Player)">
+            <summary>
+            Converts player to string version.
+            </summary>
+            <param name="player">Player.</param>
+            <returns><paramref name="player"/> string version.</returns>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RLogger.IniIfNotAlready">
+            <summary>
+            Calls <see cref="M:Mistaken.RoundLogger.RLogger.Ini"/> if <see cref="F:Mistaken.RoundLogger.RLogger.initiated"/> is <see langword="false"/>.
+            </summary>
+        </member>
+        <member name="T:Mistaken.RoundLogger.RLogger.LogMessage">
+            <summary>
+            Log object.
+            </summary>
+        </member>
+        <member name="F:Mistaken.RoundLogger.RLogger.LogMessage.Time">
+            <summary>
+            Log time.
+            </summary>
+        </member>
+        <member name="F:Mistaken.RoundLogger.RLogger.LogMessage.Type">
+            <summary>
+            Log Type.
+            </summary>
+        </member>
+        <member name="F:Mistaken.RoundLogger.RLogger.LogMessage.Module">
+            <summary>
+            Log Module.
+            </summary>
+        </member>
+        <member name="F:Mistaken.RoundLogger.RLogger.LogMessage.Message">
+            <summary>
+            Log Message.
+            </summary>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RLogger.LogMessage.#ctor(System.DateTime,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mistaken.RoundLogger.RLogger.LogMessage"/> struct.
+            </summary>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RLogger.LogMessage.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.RoundLogger.RoundLogHandler.#ctor(Mistaken.RoundLogger.PluginHandler)">
+            <inheritdoc cref="M:Mistaken.API.Diagnostics.Module.#ctor(Exiled.API.Interfaces.IPlugin{Exiled.API.Interfaces.IConfig})"/>
+        </member>
+    </members>
+</doc>

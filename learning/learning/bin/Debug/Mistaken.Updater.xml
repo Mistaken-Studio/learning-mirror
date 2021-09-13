@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mistaken.Updater</name>
+    </assembly>
+    <members>
+        <member name="T:Mistaken.Updater.Config.AutoUpdateConfig">
+            <summary>
+            Struct used for storing auto updater config values.
+            </summary>
+        </member>
+        <member name="M:Mistaken.Updater.Config.AutoUpdateConfig.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Mistaken.Updater.Config.AutoUpdateConfig"/> struct.
+            </summary>
+            <param name="input">Input data.</param>
+        </member>
+        <member name="P:Mistaken.Updater.Config.AutoUpdateConfig.Url">
+            <summary>
+            Gets or sets url used for auto updating.
+            For GitLab it should be something like "https://gitlab.example.com/api/v4/projects/1/".
+            For GitHub it should be something like "https://api.github.com/repos/example/repo/".
+            </summary>
+        </member>
+        <member name="P:Mistaken.Updater.Config.AutoUpdateConfig.Type">
+            <summary>
+            Gets or sets Auto Update type.
+            </summary>
+        </member>
+        <member name="P:Mistaken.Updater.Config.AutoUpdateConfig.Token">
+            <summary>
+            Gets or sets token used for authorization.
+            </summary>
+        </member>
+        <member name="P:Mistaken.Updater.Config.AutoUpdateConfig.VerbouseOutput">
+            <summary>
+            Gets or sets a value indicating whether auto updater's debugs should be visible.
+            </summary>
+        </member>
+        <member name="T:Mistaken.Updater.Config.AutoUpdateType">
+            <summary>
+            Auto Update Type.
+            </summary>
+        </member>
+        <member name="F:Mistaken.Updater.Config.AutoUpdateType.GITLAB">
+            <summary>
+            Download update from GitLab
+            </summary>
+        </member>
+        <member name="F:Mistaken.Updater.Config.AutoUpdateType.GITHUB">
+            <summary>
+            Download update from GitHub
+            </summary>
+        </member>
+        <member name="F:Mistaken.Updater.Config.AutoUpdateType.GITLAB_DEVELOPMENT">
+            <summary>
+            Download update from GitLab using artifacts
+            </summary>
+        </member>
+        <member name="F:Mistaken.Updater.Config.AutoUpdateType.GITHUB_DEVELOPMENT">
+            <summary>
+            Download update from GitHub using artifacts
+            </summary>
+        </member>
+        <member name="T:Mistaken.Updater.Config.IAutoUpdatableConfig">
+            <summary>
+            <see cref="T:Exiled.API.Interfaces.IConfig"/> but with fields requied for AutoUpdates.
+            </summary>
+        </member>
+        <member name="P:Mistaken.Updater.Config.IAutoUpdatableConfig.AutoUpdateConfig">
+            <summary>
+            Gets or sets config values used by AutoUpdater.
+            </summary>
+        </member>
+        <member name="T:Mistaken.Updater.Internal.AutoUpdater">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdater.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdater.Author">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdater.Priority">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdater.RequiredExiledVersion">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdater.Prefix">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.Updater.Internal.AutoUpdater.OnEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.Updater.Internal.AutoUpdater.OnDisabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mistaken.Updater.Internal.AutoUpdaterPluginConfig">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdaterPluginConfig.AutoUpdateConfig">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdaterPluginConfig.IsEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mistaken.Updater.Internal.AutoUpdateCommand">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdateCommand.Command">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdateCommand.Aliases">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.Updater.Internal.AutoUpdateCommand.Description">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.Updater.Internal.AutoUpdateCommand.Execute(System.ArraySegment{System.String},CommandSystem.ICommandSender,System.String@)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

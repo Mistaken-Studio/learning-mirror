@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mistaken.learning</name>
+    </assembly>
+    <members>
+        <member name="T:Mistaken.learning.PluginHandler">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.PluginHandler.Author">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.PluginHandler.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.PluginHandler.Prefix">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.PluginHandler.Priority">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.PluginHandler.RequiredExiledVersion">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.learning.PluginHandler.OnEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:Mistaken.learning.PluginHandler.OnDisabled">
+            <inheritdoc/>
+        </member>
+        <member name="T:Mistaken.learning.Config">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.Config.IsEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="P:Mistaken.learning.Config.VerbouseOutput">
+            <summary>
+            Gets or sets a value indicating whether debug should be displayed.
+            </summary>
+        </member>
+        <member name="P:Mistaken.learning.Config.AutoUpdateConfig">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
