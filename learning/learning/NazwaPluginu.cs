@@ -22,6 +22,7 @@ namespace Mistaken.learning
             : base(plugin)
         {
             Instance = this;
+            new CiekawyItem().TryRegister();
         }
 
         public override string Name => nameof(NazwaPluginu);
